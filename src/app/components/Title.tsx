@@ -1,7 +1,20 @@
 'use client';
 
 const letters = 'Democracy-X'.split('');
-const colors = ['#ff5555','#22cc22','#33aaff','#f6f645','#ce33ff','#33cccc','#ff5555','#22cc22','#33aaff','#f6f645','#ce33ff'];
+// 深みのある色に変更 - 彩度を下げて落ち着いた色調に
+const colors = [
+  '#cc4444', // 深い赤
+  '#228822', // 深い緑  
+  '#3388cc', // 深い青
+  '#ccaa44', // 深い黄色
+  '#9933cc', // 深い紫
+  '#339999', // 深いシアン
+  '#cc4444', // 深い赤
+  '#228822', // 深い緑
+  '#3388cc', // 深い青
+  '#ccaa44', // 深い黄色
+  '#9933cc'  // 深い紫
+];
 
 export default function Title() {
   return (
