@@ -46,6 +46,36 @@ npm start
 
 開発サーバーは [http://localhost:3000](http://localhost:3000) で起動します。
 
+## 🌐 GitHub Pages デプロイ
+
+このプロジェクトはGitHub Pagesでデプロイするように設定されています。
+
+### デプロイ手順
+
+1. **リポジトリをGitHubにプッシュ**
+   ```bash
+   git add .
+   git commit -m "Initial commit"
+   git push origin main
+   ```
+
+2. **GitHub Pagesの設定**
+   - リポジトリのSettings → Pages
+   - Source: "GitHub Actions" を選択
+
+3. **自動デプロイ**
+   - `main`ブランチにプッシュすると自動的にデプロイされます
+   - デプロイ状況はActionsタブで確認できます
+
+### ローカルでの静的ビルド確認
+
+```bash
+# 静的ファイルをビルド
+npm run build
+
+# outディレクトリに静的ファイルが生成されます
+```
+
 ## 📱 レスポンシブ対応
 
 - **デスクトップ**: フル機能でのリッチな体験
