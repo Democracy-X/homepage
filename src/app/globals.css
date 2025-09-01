@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -14,7 +15,7 @@
 
 /* Base layout */
 body {
-  font-family: 'DotGothic16', monospace;
+  font-family: 'Noto Sans JP', sans-serif;
   background: var(--bg-dark);
   color: var(--text-light);
   margin: 0;
@@ -136,6 +137,7 @@ html {
   line-height: 1.8;
   font-size: 1.125rem; /* 18px - より大きな文字サイズ */
   color: #374151;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .article-content h1,

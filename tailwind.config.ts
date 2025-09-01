@@ -8,6 +8,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         dot: ['"DotGothic16"', 'monospace'],
+        sans: ['"Noto Sans JP"', 'sans-serif'],
       },
       colors: {
         'p-red': '#ff5555',
