@@ -1,5 +1,6 @@
 import './globals.css';
 import type { ReactNode } from 'react';
+import GoogleAnalytics from './components/GoogleAnalytics';
 
 export const metadata = {
   title: 'Democracy-X - デジタル民主主義プラットフォーム',
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ja">
       <body>
+        <GoogleAnalytics />
         {children}
       </body>
     </html>
