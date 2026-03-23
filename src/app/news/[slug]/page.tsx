@@ -14,10 +14,19 @@ export const dynamicParams = false;
 async function listSlugsFromContent(): Promise<string[]> {
   try {
     const contentDir = path.join(process.cwd(), 'content', 'news');
-    const files = await fs.readdir(contentDir);
-    return files
-      .filter((f) => f.endsWith('.md'))
-      .map((f) => path.basename(f, '.md'));
+    const entries = await fs.readdir(contentDir, { withFileTypes: true });
+    const slugs: string[] = [];
+    for (const entry of entries) {
+      if (!entry.isDirectory()) continue;
+      const indexPath = path.join(contentDir, entry.name, 'index.md');
+      try {
+        await fs.access(indexPath);
+        slugs.push(entry.name);
+      } catch {
+        continue;
+      }
+    }
+    return slugs;
   } catch {
     return [];
   }

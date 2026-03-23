@@ -17,6 +17,10 @@
 /.next/
 /out/
 
+# ニュース: scripts/generateNewsData.js が生成（ビルド・dev 起動で再作成）
+/public/data/news.json
+# 画像は public/images/news → content/news のシンボリックリンク（コミットする）
+
 # production
 /build
 

@@ -4,11 +4,14 @@
   "description": "PLURALITY - Digital Experience Platform のホームページ",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "node scripts/generateNewsData.js && next build",
+    "clean": "rm -rf .next",
+    "dev": "node scripts/generateNewsData.js && next dev",
+    "dev:clean": "npm run clean && npm run dev",
+    "build": "node scripts/generateNewsData.js && next build && node scripts/pruneExportedNewsMarkdown.js",
+    "build:clean": "npm run clean && npm run build",
     "start": "next start",
     "lint": "next lint",
-    "export": "node scripts/generateNewsData.js && next build"
+    "export": "node scripts/generateNewsData.js && next build && node scripts/pruneExportedNewsMarkdown.js"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",

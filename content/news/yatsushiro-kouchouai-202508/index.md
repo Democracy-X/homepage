@@ -5,7 +5,7 @@ updatedAt: "2025-09-01"
 tags: ["発表", "ブロードリスニング"]
 author: "口木裕太郎"
 excerpt: "熊本県八代市で市民の声を可視化・分析したものを公開します。"
-coverImage: "/images/news/yatsushiro-broadlistening.png"
+coverImage: "./cover.png"
 imageAlt: "熊本県八代市の風景とブロードリスニングのイメージ"
 ---
 

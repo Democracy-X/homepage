@@ -5,7 +5,7 @@ updatedAt: "2026-03-24"
 tags: ["発表", "ブロードリスニング"]
 author: "口木裕太郎"
 excerpt: "長崎県政に関する市民の声を可視化・分析したレポートを公開しました。"
-coverImage: "/images/news/nagasaki-broadlistening.png"
+coverImage: "./cover.png"
 imageAlt: "長崎県の風景とブロードリスニングのイメージ"
 ---
 
