@@ -10,7 +10,7 @@ interface NewsCardProps {
 export function NewsCard({ article, onClick }: NewsCardProps) {
   return (
     <article 
-      className="card-neo-light overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300"
+      className="card-neo-light h-full overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300 flex flex-col"
       onClick={onClick}
     >
       {/* カバー画像 */}
@@ -26,8 +26,8 @@ export function NewsCard({ article, onClick }: NewsCardProps) {
         </div>
       )}
       
-      <div className="p-6">
-        <h3 className="text-xl font-bold text-gray-800 mb-2">
+      <div className="p-6 flex flex-1 flex-col">
+        <h3 className="text-xl font-bold text-gray-800 mb-2 line-clamp-2 min-h-[3.5rem]">
           {article.title}
         </h3>
         
@@ -42,7 +42,7 @@ export function NewsCard({ article, onClick }: NewsCardProps) {
           {article.excerpt}
         </p>
 
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 mt-auto">
           {article.tags.map((tag, index) => (
             <span
               key={index}

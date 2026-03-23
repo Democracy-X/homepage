@@ -53,7 +53,7 @@ export default function News() {
           <>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {articles.map((article) => (
-                <Link key={article.id} href={`/news/${article.slug}`}>
+                <Link key={article.id} href={`/news/${article.slug}`} className="block h-full">
                   <NewsCard article={article} />
                 </Link>
               ))}
